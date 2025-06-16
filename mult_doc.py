@@ -34,8 +34,8 @@ model = AzureChatOpenAI(
 embedding_model = AzureOpenAIEmbeddings(
     model="text-embedding-3-large",
     # dimensions: Optional[int] = None, # Can specify dimensions with new text-embedding-3 models
-    azure_endpoint="https://medumodel.openai.azure.com/",
-    api_key="1FBoiLk8OQXp2rbdV4GJmWIcVXScKCwBagqzr05v4nLmtFcfYdBGJQQJ99BDACYeBjFXJ3w3AAABACOGznDi", # Can provide an API key directly. If missing read env variable AZURE_OPENAI_API_KEY
+    azure_endpoint="",
+    api_key="", # Can provide an API key directly. If missing read env variable AZURE_OPENAI_API_KEY
     openai_api_version="2024-02-01", # If not provided, will read env variable AZURE_OPENAI_API_VERSION
     dimensions=384
 
